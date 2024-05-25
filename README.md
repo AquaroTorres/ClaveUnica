@@ -57,6 +57,7 @@ You should now be able to use the provider like you would regularly use Socialit
 return Socialite::driver('claveunica')->redirect();
 ```
 
+
 ### Returned User fields
 
 - ``id``
@@ -65,3 +66,8 @@ return Socialite::driver('claveunica')->redirect();
 - ``last_name``
 - ``run``
 - ``dv``
+
+
+### Requirements for production
+
+In order to fulfill the requirements to pass into production, you need to implement a logout mechanism, calling the claveunica logout url available in the official documentation.
